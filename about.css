@@ -1,0 +1,143 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    color: #333;
+}
+
+/* About Section */
+.about {
+    padding: 80px 10%;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Container */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Left Side - Image */
+.image {
+    flex: 1;
+    padding-right: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Right Side - Text */
+.info {
+    flex: 1;
+    max-width: 500px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.heading {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #222;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.heading::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #007bff;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #007bff;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Social Icons */
+.icons {
+    margin-top: 20px;
+}
+
+.icons a {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.icons a:hover {
+    color: #ff4081;
+    transform: scale(1.2);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .info {
+        max-width: 100%;
+    }
+
+    .heading {
+        font-size: 2.2rem;
+    }
+}
