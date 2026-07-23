@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
   <meta name="google-site-verification" content="FW7rcxi_mwc3X5nxhlJqMHrgi2c0XjySaZqLthbYjjE" />
-<meta name="google-site-verification" content="ad5xSF75uh-eU1Bq95IE2SqvErlO_qvwZWoad6x56-o" />
-<meta name="google-site-verification" content="wLUzJlltphNNuI_lnhYceFv1vQJ68mCj_PU7YclaPVI" />
-<meta name="geo.region" content="IN-TG" />
+  <meta name="google-site-verification" content="ad5xSF75uh-eU1Bq95IE2SqvErlO_qvwZWoad6x56-o" />
+  <meta name="google-site-verification" content="wLUzJlltphNNuI_lnhYceFv1vQJ68mCj_PU7YclaPVI" />
+  <meta name="geo.region" content="IN-TG" />
   <meta name="geo.placename" content="Kothagudem" />
   <meta name="geo.position" content="17.554019;80.617638" />
   <meta name="ICBM" content="17.554019, 80.617638" />
   <meta name="author" content="Eslavath Narasimha Naik" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elegant Interior Design</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="about.css">  <!-- Link to your CSS file -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegant Interior Design - About Us</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="aa.css">
+  <link rel="stylesheet" href="about.css">
 </head>
 <body>
+
+<header class="header fixed-top">
+  <a href="index.html"><i class="fas fa-home"></i></a>
+  <nav>
+    <ul>
+      <a href="index.html#home">home</a>
+      <a href="about.html">about</a>
+      <a href="a1.html">services</a>
+      <a href="index.html#project">projects</a>
+      <a href="index.html#contact">contact</a>
+    </ul>
+  </nav>
+  <button class="fas fa-bars"></button>
+</header>
 
 <section id="about" class="about">
   <div class="container">
@@ -44,5 +60,10 @@
   </div>
 </section>
 
+<script>
+  document.querySelector('.header button').addEventListener('click', () => {
+    document.querySelector('.header').classList.toggle('active');
+  });
+</script>
 </body>
 </html>
